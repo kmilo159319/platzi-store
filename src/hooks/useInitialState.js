@@ -1,8 +1,19 @@
-import { useState } from 'react';
+import axios from 'axios';
+import { useState, useEffect } from 'react';
 import initialState from '../initialState';
+
+//const API = 'https://use-central1-gndx-fake-api.cloudfunctions.net/api';
 
 export const useInitialState = () => {
   const [state, setState] = useState(initialState);
+  //const [products, setproducts] = useState(second);
+
+  /*useEffect(async () => {
+    
+  const response = await axios(API);
+  setproducts(response.data);
+  }, []);
+  */
 
   const addToCart = (payload) => {
     setState({
@@ -37,6 +48,7 @@ export const useInitialState = () => {
     removeFromCart,
     addToBuyer,
     addNewOrder,
+    //products,
     state,
   };
 };

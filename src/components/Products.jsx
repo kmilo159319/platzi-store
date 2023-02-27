@@ -5,6 +5,7 @@ import '../styles/components/Products.css';
 
 export const Products = () => {
   const {
+    //products,
     state: { products },
     addToCart,
   } = useContext(AppContext);
