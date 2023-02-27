@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import '../styles/components/Checkout.css';
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
 import { handleSumTotal } from '../utils/handleSumTotal';
 

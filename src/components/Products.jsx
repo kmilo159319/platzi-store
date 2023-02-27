@@ -15,9 +15,7 @@ export const Products = () => {
     <div className="Products">
       <div className="Products-items">
         {products.map((product) => (
-          <Product
-
-          />
+          <Product />
         ))}
       </div>
     </div>
