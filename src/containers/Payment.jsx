@@ -1,5 +1,4 @@
 import React, {useContext} from 'react';
-import { PayPalButton } from 'react-paypal-button';
 import { useHistory } from 'react-router-dom';
 import '../styles/components/Payment.css';
 import {AppContext} from '../context/AppContext';
@@ -47,15 +46,7 @@ export const Payment = () => {
         ))}
         <h4>Total: $ {handleSumTotal(cart)}</h4>
         <div className="Payment-button">
-          <PayPalButton
-           paypalOptions={paypalOptions}
-           buttonStyles={buttonStyles}
-           amount={handleSumTotal(cart)}
-           onPaymentStart={() => console.log('start payment')}
-           onPaymentSuccess={data => handlePymentSucess(data) }
-           onPaymentError={error => console.log(error)}
-           onPaymentCancel={data => console.log*data}
-          />
+
           </div>
       </div>
       <div />
