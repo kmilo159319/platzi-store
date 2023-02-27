@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import { PayPalButton } from 'react-paypal-button';
+import { PayPalButton } from 'react-paypal-button-v2';
 import { useHistory } from 'react-router-dom';
 import '../styles/components/Payment.css';
 import {AppContext} from '../context/AppContext';
